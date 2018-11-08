@@ -38,13 +38,13 @@ public class BaseResponse<T> {
 
     public BaseResponse() {}
 
-    public BaseResponse(String code, String message, T result) {
+    public BaseResponse(String version, String code, String message) {
         this.code = code;
         this.message = message;
-        this.result = result;
+        this.version = version;
     }
 
-    public BaseResponse(String code, String message, T result, String version) {
+    public BaseResponse(String version, String code, String message, T result) {
         this.code = code;
         this.message = message;
         this.version = version;

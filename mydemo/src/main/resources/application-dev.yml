@@ -1,0 +1,9 @@
+server:
+  port: 7777
+  context-path: /product
+spring:
+  application:
+    name: product
+swagger:
+  basepackage: "com.saraad.controller"
+  title: "Product Service"

@@ -32,4 +32,13 @@ public class ProductVo {
     @ApiModelProperty("备注")
     private String remark;
 
+    public ProductVo() {
+    }
+
+    public ProductVo(Long id, String name, String productCode, String remark) {
+        this.id = id;
+        this.name = name;
+        this.productCode = productCode;
+        this.remark = remark;
+    }
 }

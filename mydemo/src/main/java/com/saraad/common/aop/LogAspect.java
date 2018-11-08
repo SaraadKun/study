@@ -1,4 +1,4 @@
-package com.saraad.common;
+package com.saraad.common.aop;
 
 import com.alibaba.fastjson.JSON;
 import org.aspectj.lang.JoinPoint;
@@ -12,14 +12,13 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
-import java.util.Arrays;
 
 /**
  * All rights Reserved, Designed By www.freemud.cn
  *
  * @version V1.0
  * @Title: LogAspect
- * @Package:com.saraad.common
+ * @Package:com.saraad.common.aop
  * @Description:
  * @author: bin.peng
  * @date: 2018/11/716:14
@@ -66,7 +65,7 @@ public class LogAspect {
 //        throw e;
     }
 
-    @Around("log()")
+//    @Around("log()")
     public void aroundAct(ProceedingJoinPoint joinPoint) throws Exception{
         //获取当前执行的方法
         Signature signature = joinPoint.getSignature();

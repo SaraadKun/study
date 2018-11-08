@@ -2,8 +2,10 @@ package com.saraad.controller;
 
 import com.saraad.entity.base.BaseResponse;
 import com.saraad.entity.vo.ProductVo.ProductVo;
+import com.saraad.service.ProductService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -27,18 +29,24 @@ import java.util.List;
 @RequestMapping("/product")
 public class TestController {
 
+    private ProductService productService;
+
+    @Autowired
+    public TestController(ProductService productService) {
+        this.productService = productService;
+    }
+
     @ApiOperation("新增")
     @PostMapping("/add")
-    public BaseResponse<ProductVo> add(@RequestBody ProductVo productVo){
-
-        return null;
+    public BaseResponse add(@RequestBody ProductVo productVo){
+        return productService.add(productVo);
     }
 
     @ApiOperation("查询")
     @GetMapping("/query")
     public BaseResponse<List<ProductVo>> query(){
-
-        return null;
+        System.out.println("query");
+        return productService.queryAll();
     }
 
 
