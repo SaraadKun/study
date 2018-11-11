@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #服务端口,路径
 server:
   port: 7777
@@ -7,6 +8,14 @@ spring:
   application:
     name: product
 #swagger配置
+=======
+server:
+  port: 7777
+  context-path: /product
+spring:
+  application:
+    name: product
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
 swagger:
   basepackage: "com.saraad.controller"
   title: "Product Service"

@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: net.bytebuddy:byte-buddy:1.6.14">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.m2/repository/net/bytebuddy/byte-buddy/1.6.14/byte-buddy-1.6.14.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.m2/repository/net/bytebuddy/byte-buddy/1.6.14/byte-buddy-1.6.14-sources.jar!/" />
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.6.14/byte-buddy-1.6.14.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.6.14/byte-buddy-1.6.14-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.6.14/byte-buddy-1.6.14-sources.jar!/" />
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
     </SOURCES>
   </library>
 </component>

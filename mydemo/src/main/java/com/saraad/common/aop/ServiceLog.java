@@ -2,7 +2,10 @@ package com.saraad.common.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.Signature;
+<<<<<<< HEAD
 import org.aspectj.lang.annotation.After;
+=======
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -42,6 +45,7 @@ public class ServiceLog {
         System.out.println("正在执行:"+target.getClass().getName()+"_"+method.getName());
     }
 
+<<<<<<< HEAD
     @After("log()")
     public void  doAfter(JoinPoint joinPoint){
         Object target = joinPoint.getTarget();
@@ -54,4 +58,6 @@ public class ServiceLog {
 
     }
 
+=======
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
 }

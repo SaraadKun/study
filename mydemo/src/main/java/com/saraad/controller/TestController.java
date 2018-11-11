@@ -49,11 +49,14 @@ public class TestController {
         return productService.queryAll();
     }
 
+<<<<<<< HEAD
     @ApiOperation("测试新增")
     @PostMapping("/addTest")
     public BaseResponse addTest(@RequestBody ProductVo productVo){
         return productService.addTest(productVo);
     }
+=======
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
 
 
 

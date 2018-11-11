@@ -42,9 +42,15 @@ public class LogAspect {
         System.out.println("AOP:Before...");
         System.out.println("URL : " + request.getRequestURL().toString());
         System.out.println("HTTP_METHOD : " + request.getMethod());
+<<<<<<< HEAD
 //        System.out.println("IP : " + request.getRemoteAddr());
         System.out.println("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
         System.out.println("请求参数:" + JSON.toJSONString(joinPoint.getArgs()));
+=======
+        System.out.println("IP : " + request.getRemoteAddr());
+        System.out.println("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+        System.out.println("ARGS : " + JSON.toJSONString(joinPoint.getArgs()));
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
 
     }
 

@@ -27,6 +27,7 @@ public class ProductDao {
 
     static {
         ArrayList<ProductVo> products = new ArrayList<>();
+<<<<<<< HEAD
         try {
             products.add(new ProductVo(IdWorker.generateId(), "product_01", "10001", "初始商品1"));
             Thread.sleep(1);
@@ -36,6 +37,11 @@ public class ProductDao {
         } catch (InterruptedException e) {
 
         }
+=======
+        products.add(new ProductVo(IdWorker.generateId(), "product_01", "10001", "初始商品1"));
+        products.add(new ProductVo(IdWorker.generateId(), "product_02", "10002", "初始商品2"));
+        products.add(new ProductVo(IdWorker.generateId(), "product_03", "10003", "初始商品3"));
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
         list = products;
     }
 
@@ -50,6 +56,7 @@ public class ProductDao {
         if (null == productVo) return 0;
         if (null == productVo.getId()) return 0;
         //查看当前id的productVo是否已存在
+<<<<<<< HEAD
 //        Stream<ProductVo> stream = list.stream().filter(p -> p.getId().longValue() == productVo.getId().longValue());
 //        List<ProductVo> exsitList = stream.collect(Collectors.toList());
         List<ProductVo> exsitList = list.stream().filter(p -> p.getId().longValue() == productVo.getId().longValue()).collect(Collectors.toList());
@@ -58,6 +65,9 @@ public class ProductDao {
 //            if (productVo.getId().longValue() == vo.getId().longValue())
 //                exsitList.add(vo);
 //        }
+=======
+        List<ProductVo> exsitList = list.stream().filter(p -> p.getId().longValue() == productVo.getId().longValue()).collect(Collectors.toList());
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
         if (!CollectionUtils.isEmpty(exsitList))
             return 0;
         list.add(productVo);

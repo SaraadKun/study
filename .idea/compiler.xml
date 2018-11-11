@@ -6,16 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="demo1" />
+=======
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
         <module name="leetcode" />
         <module name="mydemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+<<<<<<< HEAD
       <module name="demo1" target="1.8" />
       <module name="java-training-fork" target="1.8" />
       <module name="leetcode" target="1.8" />
       <module name="mydemo" target="1.8" />
+=======
+      <module name="java-training" target="1.8" />
+      <module name="leetcode" target="1.8" />
+      <module name="mydemo" target="1.6" />
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
     </bytecodeTargetLevel>
   </component>
 </project>

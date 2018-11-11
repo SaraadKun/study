@@ -57,6 +57,7 @@ public class ProductService {
         return new BaseResponse(Version.VERSION_1.getCode(), StatusEnum.STATUS_100.getCode(),StatusEnum.STATUS_100.getMesssage(),list);
     }
 
+<<<<<<< HEAD
     /**
      * add
      * @param productVo
@@ -71,4 +72,6 @@ public class ProductService {
         return new BaseResponse(Version.VERSION_1.getCode(), StatusEnum.STATUS_101.getCode(),StatusEnum.STATUS_101.getMesssage());
     }
 
+=======
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
 }
