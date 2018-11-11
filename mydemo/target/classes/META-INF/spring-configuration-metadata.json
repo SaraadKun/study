@@ -1,0 +1,22 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.saraad.config.SwaggerProperties",
+      "name": "swagger",
+      "type": "com.saraad.config.SwaggerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.saraad.config.SwaggerProperties",
+      "name": "swagger.basepackage",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.saraad.config.SwaggerProperties",
+      "name": "swagger.title",
+      "type": "java.lang.String"
+    }
+  ]
+}

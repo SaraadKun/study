@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"  
+    xmlns:tx="http://www.springframework.org/schema/tx"   
+    xmlns:task="http://www.springframework.org/schema/task"
+    xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="  
+		http://www.springframework.org/schema/beans  
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/task
+		http://www.springframework.org/schema/task/spring-task.xsd
+		">
+
+    
+<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>  
+	
+<!--<task:annotation-driven/> -->
+
+<context:component-scan base-package="com" use-default-filters="false">
+  	<!-- 扫描符合@Service @Repository的类 -->
+  		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service" />
+  		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository" />
+	    <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+</context:component-scan>
+
+	<!-- 重连策略 -->
+	<bean id="retryPolicy" class="org.apache.curator.retry.ExponentialBackoffRetry">
+		<!-- 间隔时间基数 -->
+		<constructor-arg index="0" value="1000" />
+		<!-- 重连策略 -->
+		<constructor-arg index="1" value="3000" />
+	</bean>
+
+	<bean id="curatorFramework" class="org.apache.curator.framework.CuratorFrameworkFactory" factory-method="newClient" init-method="start">
+		<constructor-arg index="0" value="localhost:2181" />
+		<!--<constructor-arg index="0" value="server1:port,server2:port,server3:port" />-->
+		<!-- sessionTimeoutMs会话超时时间，单位为毫秒。默认是60000ms  -->
+		<constructor-arg index="1" value="5000" />
+		<!-- connectionTimeoutMs连接创建超时时间，单位毫秒，默认15000ms -->
+		<constructor-arg index="2" value="3000" />
+		<constructor-arg index="3" ref="retryPolicy" />
+	</bean>
+
+
+
+
+
+
+</beans>

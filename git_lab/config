@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[user]
+	name = Saraad
+	email = saraad@163.com
+[remote "origin"]
+	url = git@gitlab.freemud.com:Saraad/java-training.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
