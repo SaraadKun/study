@@ -10,7 +10,14 @@
     <packaging>pom</packaging>
 
     <modules>
+<<<<<<< HEAD
         <module>demo1</module>
+=======
+<<<<<<< HEAD
+        <module>demo1</module>
+=======
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
         <module>leetcode</module>
         <module>mydemo</module>
     </modules>

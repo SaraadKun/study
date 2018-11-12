@@ -97,16 +97,22 @@ public class IdWorker {
     public static long generateId() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
         //未初始化swquence时生成Id会报空指针,若未初始化,默认机器码为100初始化
         if(null == sequence)
             init(100);
 =======
 >>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
+<<<<<<< HEAD
 =======
         //未初始化swquence时生成Id会报空指针,若未初始化,默认机器码为100初始化
         if(null == sequence)
             init(100);
 >>>>>>> fa51c670b35efebc87aaba50e5e64f5af288b647
+=======
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
         try {
             while (true) {
                 //序号+1

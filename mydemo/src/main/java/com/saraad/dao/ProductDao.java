@@ -29,8 +29,11 @@ public class ProductDao {
         ArrayList<ProductVo> products = new ArrayList<>();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> fa51c670b35efebc87aaba50e5e64f5af288b647
+=======
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
         try {
             products.add(new ProductVo(IdWorker.generateId(), "product_01", "10001", "初始商品1"));
             Thread.sleep(1);
@@ -41,13 +44,19 @@ public class ProductDao {
 
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
 =======
         products.add(new ProductVo(IdWorker.generateId(), "product_01", "10001", "初始商品1"));
         products.add(new ProductVo(IdWorker.generateId(), "product_02", "10002", "初始商品2"));
         products.add(new ProductVo(IdWorker.generateId(), "product_03", "10003", "初始商品3"));
 >>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
+<<<<<<< HEAD
 =======
 >>>>>>> fa51c670b35efebc87aaba50e5e64f5af288b647
+=======
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
         list = products;
     }
 
@@ -64,8 +73,11 @@ public class ProductDao {
         //查看当前id的productVo是否已存在
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> fa51c670b35efebc87aaba50e5e64f5af288b647
+=======
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
 //        Stream<ProductVo> stream = list.stream().filter(p -> p.getId().longValue() == productVo.getId().longValue());
 //        List<ProductVo> exsitList = stream.collect(Collectors.toList());
         List<ProductVo> exsitList = list.stream().filter(p -> p.getId().longValue() == productVo.getId().longValue()).collect(Collectors.toList());
@@ -75,11 +87,17 @@ public class ProductDao {
 //                exsitList.add(vo);
 //        }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         List<ProductVo> exsitList = list.stream().filter(p -> p.getId().longValue() == productVo.getId().longValue()).collect(Collectors.toList());
 >>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
 =======
 >>>>>>> fa51c670b35efebc87aaba50e5e64f5af288b647
+=======
+=======
+        List<ProductVo> exsitList = list.stream().filter(p -> p.getId().longValue() == productVo.getId().longValue()).collect(Collectors.toList());
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
         if (!CollectionUtils.isEmpty(exsitList))
             return 0;
         list.add(productVo);
