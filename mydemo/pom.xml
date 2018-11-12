@@ -33,19 +33,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-<<<<<<< HEAD
         <!--fastjson-->
-=======
->>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.32</version>
         </dependency>
-<<<<<<< HEAD
         <!--swagger-->
-=======
->>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
