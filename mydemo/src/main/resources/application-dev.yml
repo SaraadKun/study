@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa51c670b35efebc87aaba50e5e64f5af288b647
+=======
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
+#服务端口,路径
+server:
+  port: 7777
+  context-path: /product
+#服务名
+spring:
+  application:
+    name: product
+#swagger配置
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
+=======
+server:
+  port: 7777
+  context-path: /product
+spring:
+  application:
+    name: product
+>>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
+<<<<<<< HEAD
+=======
+>>>>>>> fa51c670b35efebc87aaba50e5e64f5af288b647
+=======
+>>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
+swagger:
+  basepackage: "com.saraad.controller"
+  title: "Product Service"
