@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
  * @Copyright: 2018  Inc. All rights reserved.
  * PROJECT FOR PRACTICE
  */
+@Configuration
 @ConfigurationProperties(prefix = "db.druid")
 public class DruidConfig {
 
