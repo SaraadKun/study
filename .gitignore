@@ -2,5 +2,6 @@
 */*.iml
 *.iml
 */target
+*/targer/*
 .idea/*
 .idea/vsc.xml
