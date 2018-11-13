@@ -3,7 +3,7 @@ package com.saraad.service;
 import com.saraad.common.util.IdWorker;
 import com.saraad.dao.ProductDao;
 import com.saraad.entity.base.BaseResponse;
-import com.saraad.entity.vo.ProductVo.ProductVo;
+import com.saraad.entity.vo.ProductVo;
 import com.saraad.enums.StatusEnum;
 import com.saraad.enums.Version;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,16 +54,8 @@ public class ProductService {
      */
     public BaseResponse<List<ProductVo>> queryAll(){
         List<ProductVo> list = productDao.queryAll();
-        return new BaseResponse(Version.VERSION_1.getCode(), StatusEnum.STATUS_100.getCode(),StatusEnum.STATUS_100.getMesssage(),list);
+        return new BaseResponse<>(Version.VERSION_1.getCode(), StatusEnum.STATUS_100.getCode(),StatusEnum.STATUS_100.getMesssage(),list);
     }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fa51c670b35efebc87aaba50e5e64f5af288b647
-=======
->>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
     /**
      * add
      * @param productVo
@@ -77,15 +69,4 @@ public class ProductService {
         }
         return new BaseResponse(Version.VERSION_1.getCode(), StatusEnum.STATUS_101.getCode(),StatusEnum.STATUS_101.getMesssage());
     }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
-=======
->>>>>>> fa51c670b35efebc87aaba50e5e64f5af288b647
-=======
-=======
->>>>>>> 791173b9be1a914c82554e2e1131c9a4fcdb5e3e
->>>>>>> a05eac5adefc3301129f608bd7df04afeadcfd26
 }
