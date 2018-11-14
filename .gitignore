@@ -1,0 +1,7 @@
+.idea
+*/*.iml
+*.iml
+/target/
+.idea/*
+.idea/vsc.xml
+.DS_Store
