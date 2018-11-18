@@ -15,9 +15,9 @@ db:
     url: jdbc:mysql://118.89.191.136:6630/fm_mg_takeout?useUnicode=true&characterEncoding=utf8
     username: DevZT
     password: Z12lFI&ZugOOW%tN
-#    url: jdbc:mysql://118.89.191.136:6630/fm_mg_takeout?useUnicode=true&characterEncoding=utf8
-#    username: DevZT
-#    password: Z12lFI&ZugOOW%tN
+#    url: jdbc:mysql://localhost:3306/training
+#    username: root
+#    password: root
     driver-class: com.mysql.jdbc.Driver
     max-active: 100
     min-idle: 1
