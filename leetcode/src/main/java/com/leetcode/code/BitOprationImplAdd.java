@@ -1,5 +1,7 @@
 package com.leetcode.code;
 
+import com.leetcode.recursion.TailInvoke;
+import com.leetcode.recursion.TailRecursion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -37,11 +39,33 @@ public class BitOprationImplAdd {
         //计算两数之和,忽略进位1+1=10=0  0+0=0 1+0=0+1=1
         int sum = a ^ b;
         //计算进位 进位不为0左移一位与sum相加
-        int carry = a & b;
+        int carry = (a & b) << 1;
         if (0 == carry){
             return sum;
         }
-        return getSumWithoutPlus(sum,carry << 1);
+        return getSumWithoutPlus(sum,carry);
+    }
+
+    @Test
+    public void testAddTR(){
+        int sum1 = getSumUseTR(12,7).invoke().intValue();
+        System.out.println(sum1);
+        int sum2 = getSumUseTR(0,9).invoke().intValue();
+        System.out.println(sum2);
+        int sum3 = getSumUseTR(0,-9).invoke().intValue();
+        System.out.println(sum3);
+        int sum4 = getSumUseTR(-25,10).invoke().intValue();
+        System.out.println(sum4);
+        int sum5 = getSumUseTR(-25,-30).invoke().intValue();
+        System.out.println(sum5);
+    }
+    TailRecursion<Integer> getSumUseTR(int a,int b){
+        int sum = a ^ b;
+        int carry = (a & b) << 1;
+        if (0 == carry) {
+            return TailInvoke.done(sum);
+        }
+        return TailInvoke.call(()->getSumUseTR(sum,carry));
     }
 
 
