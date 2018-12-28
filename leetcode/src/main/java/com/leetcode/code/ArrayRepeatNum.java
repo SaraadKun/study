@@ -27,7 +27,7 @@ public class ArrayRepeatNum {
         //双层for循环 时间:O(n²)
         //排序数组 时间:O(nlog(n))
         //hashmap 时间:O(n) 空间O(n)
-        //时间O(1)算法
+        //时间O(1)算法实现
 //        int[] arr = {2,3,1,0,2,5,3};
 //        int[] arr = {0,1,2,3,4,5,6};
 //        int [] arr = null;
