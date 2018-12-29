@@ -13,7 +13,7 @@ import sun.misc.Unsafe;
  * @version V1.0
  * @Title: BitOprationImplAdd
  * @Package:com.leetcode.code
- * @Description:
+ * @Description: 不使用四则运算实现两数相加
  * @author: bin.peng
  * @date: 2018/12/28 10:51
  * @Copyright: 2018 www.freemud.cn Inc. All rights reserved.
@@ -37,7 +37,7 @@ public class BitOprationImplAdd {
     }
 
     private int getSumWithoutPlus(int a, int b) {
-        //计算两数之和,忽略进位1+1=10=0  0+0=0 1+0=0+1=1
+        //计算两数之和,忽略进位1+1==10==0  0+0==0 1+0==0+1==1
         int sum = a ^ b;
         //计算进位 进位不为0左移一位与sum相加
         int carry = (a & b) << 1;
@@ -60,7 +60,8 @@ public class BitOprationImplAdd {
         int sum5 = getSumUseTR(-25,-30).invoke().intValue();
         System.out.println(sum5);
     }
-    TailRecursion<Integer> getSumUseTR(int a,int b){
+    //使用尾递归包装类
+    private TailRecursion<Integer> getSumUseTR(int a,int b){
         int sum = a ^ b;
         int carry = (a & b) << 1;
         if (0 == carry) {
