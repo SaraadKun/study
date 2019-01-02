@@ -2,6 +2,7 @@
 */*.iml
 *.iml
 /target/
+/target/*
 .idea/*
 .idea/vsc.xml
 .DS_Store

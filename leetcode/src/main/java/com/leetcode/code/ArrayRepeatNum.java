@@ -38,21 +38,50 @@ public class ArrayRepeatNum {
         System.out.println(nums.toString());
     }
 
+    /**
+     * 长度为n+1的int数组,数组元素值范围为[1,n]
+     * 不改变数组结构,无空间复杂度算法
+     * 找出重复数字
+     * */
+    private static int findRepeatNumNoChange(int[] arr){
+        if(null == arr || 0 == arr.length){throw new RuntimeException("数组为空");}
+        int length = arr.length;
+        int mid = length/2;
+        return -1;
+    }
+
+    boolean getRepNum(int[] arr, int start, int end){
+        if (null == arr || 0 == arr.length || end - start < 1){throw new RuntimeException("输入参数有误");}
+        if (end - start == 1){
+            System.out.println(end);
+            return false;
+        }
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > start && arr[i] <= end){
+                count++;
+            }
+        }
+        if (count > (end - start)){
+            return true;
+        }
+        return false;
+
+    }
+
     private static List<Integer> findAllRepeatNum(int[] arr) {
         if(null == arr || 0 == arr.length){throw new RuntimeException("数组为空");}
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
             while (i != arr[i]){
-                {
-                    int m = arr[i];
-                    if (m == arr[m]) {
-                        list.add(m);
-                        break;
-                    }
-                    arr[i] = arr[m];
-                    arr[m] = m;
+                int m = arr[i];
+                if (m == arr[m]) {
+                    list.add(m);
+                    break;
                 }
-            };
+                arr[i] = arr[m];
+                arr[m] = m;
+            }
         }
         return list;
     }
@@ -61,15 +90,13 @@ public class ArrayRepeatNum {
         if(null == arr || 0 == arr.length){throw new RuntimeException("数组为空");}
         for (int i = 0; i < arr.length; i++) {
             while (i != arr[i]){
-                {
-                    int m = arr[i];
-                    if (m == arr[m]) {
-                        return m;
-                    }
-                    arr[i] = arr[m];
-                    arr[m] = m;
+                int m = arr[i];
+                if (m == arr[m]) {
+                    return m;
                 }
-            };
+                arr[i] = arr[m];
+                arr[m] = m;
+            }
         }
         return -1;
     }
