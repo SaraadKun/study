@@ -16,6 +16,8 @@ public class BinaryTreeNode {
 
     public int value;
 
+    public BinaryTreeNode parent;
+
     public BinaryTreeNode left;
 
     public BinaryTreeNode right;
@@ -25,5 +27,12 @@ public class BinaryTreeNode {
 
     public BinaryTreeNode(int value) {
         this.value = value;
+    }
+
+    public BinaryTreeNode(int value, BinaryTreeNode parent, BinaryTreeNode left, BinaryTreeNode right) {
+        this.value = value;
+        this.parent = parent;
+        this.left = left;
+        this.right = right;
     }
 }
