@@ -19,6 +19,7 @@ public class ReBuildBinaryTree {
     public static void main(String[] args){
         int[] pre = {1,2,4,7,3,5,6,8};
         int[] mid = {4,7,2,1,5,3,8,6};
+//        int[] mid = {4,7,1,2,5,3,8,6};
         BinaryTreeNode tree = reBuild(pre,mid);
         System.out.println("end");
 
@@ -37,16 +38,23 @@ public class ReBuildBinaryTree {
     private static BinaryTreeNode build(int[] pre, int preStart, int preEnd, int[] in, int inStart, int inEnd){
         BinaryTreeNode node = new BinaryTreeNode();
         //边界条件 叶子节点
-        if (preStart == preEnd && inStart == inEnd){
-            node.value = pre[preStart];
-            node.left = null;
-            node.right = null;
-            return node;
+        if (preStart == preEnd){
+            if (inStart == inEnd && pre[preStart] == in[inStart]) {
+                node.value = pre[preStart];
+                node.left = null;
+                node.right = null;
+                return node;
+            }else {
+                throw new RuntimeException("invalid input");//非法输入
+            }
         }
         node.value = pre[preStart];
         int index = inStart;
         while (index <= inEnd && in[index] != pre[preStart])
             ++index;
+        if(index == inEnd && in[index] != pre[preStart]){
+            throw new RuntimeException("Invalid input");//非法输入
+        }
         int lenth = index - inStart;
         //构建左子树
         if (lenth>0)
