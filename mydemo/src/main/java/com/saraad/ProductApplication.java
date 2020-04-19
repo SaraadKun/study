@@ -2,10 +2,8 @@ package com.saraad;
 
 import com.saraad.common.util.IdWorker;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * All rights Reserved, Designed By www.freemud.cn
