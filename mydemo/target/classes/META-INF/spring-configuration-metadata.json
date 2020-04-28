@@ -1,22 +1,106 @@
 {
-  "hints": [],
   "groups": [
     {
-      "sourceType": "com.saraad.config.SwaggerProperties",
+      "name": "db.druid",
+      "type": "com.saraad.config.druid.DruidConfig",
+      "sourceType": "com.saraad.config.druid.DruidConfig"
+    },
+    {
       "name": "swagger",
-      "type": "com.saraad.config.SwaggerProperties"
+      "type": "com.saraad.config.SwaggerProperties",
+      "sourceType": "com.saraad.config.SwaggerProperties"
     }
   ],
   "properties": [
     {
-      "sourceType": "com.saraad.config.SwaggerProperties",
-      "name": "swagger.basepackage",
-      "type": "java.lang.String"
+      "name": "db.druid.driver-class",
+      "type": "java.lang.String",
+      "sourceType": "com.saraad.config.druid.DruidConfig"
     },
     {
-      "sourceType": "com.saraad.config.SwaggerProperties",
+      "name": "db.druid.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.saraad.config.druid.DruidConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.druid.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "com.saraad.config.druid.DruidConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.druid.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "com.saraad.config.druid.DruidConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.druid.min-evictable-idle-time-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "com.saraad.config.druid.DruidConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.druid.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.saraad.config.druid.DruidConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.druid.password",
+      "type": "java.lang.String",
+      "sourceType": "com.saraad.config.druid.DruidConfig"
+    },
+    {
+      "name": "db.druid.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.saraad.config.druid.DruidConfig",
+      "defaultValue": false
+    },
+    {
+      "name": "db.druid.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.saraad.config.druid.DruidConfig",
+      "defaultValue": false
+    },
+    {
+      "name": "db.druid.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.saraad.config.druid.DruidConfig",
+      "defaultValue": false
+    },
+    {
+      "name": "db.druid.time-between-eviction-runs-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "com.saraad.config.druid.DruidConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.druid.url",
+      "type": "java.lang.String",
+      "sourceType": "com.saraad.config.druid.DruidConfig"
+    },
+    {
+      "name": "db.druid.username",
+      "type": "java.lang.String",
+      "sourceType": "com.saraad.config.druid.DruidConfig"
+    },
+    {
+      "name": "db.druid.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "com.saraad.config.druid.DruidConfig"
+    },
+    {
+      "name": "swagger.basepackage",
+      "type": "java.lang.String",
+      "sourceType": "com.saraad.config.SwaggerProperties"
+    },
+    {
       "name": "swagger.title",
-      "type": "java.lang.String"
+      "type": "java.lang.String",
+      "sourceType": "com.saraad.config.SwaggerProperties"
     }
-  ]
+  ],
+  "hints": []
 }
