@@ -1,7 +1,7 @@
 package com.leetcode.test;
 
 import com.leetcode.code.ListNode;
-import com.leetcode.code.TwoNumsAdd;
+//import com.leetcode.code.TwoNumsAdd;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -22,7 +22,7 @@ public class CodeTest {
 //        l2.next.next = new ListNode(4);
         ListNode l1 = new ListNode(5);
         ListNode l2 = new ListNode(5);
-        ListNode node = TwoNumsAdd.addTwoNumbers(l1, l2);
+//        ListNode node = TwoNumsAdd.addTwoNumbers(l1, l2);
         System.out.println("end");
     }
 
