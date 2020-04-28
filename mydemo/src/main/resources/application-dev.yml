@@ -1,7 +1,6 @@
 #服务端口,路径
 server:
   port: 7777
-  context-path: /product
 #服务名
   application:
     name: product
