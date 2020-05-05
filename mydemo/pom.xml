@@ -106,10 +106,10 @@
             <version>1.3.0</version>
         </dependency>
         <!--pagehelper -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.github.pagehelper</groupId>-->
+            <!--<artifactId>pagehelper-spring-boot-starter</artifactId>-->
+        <!--</dependency>-->
 
         <!-- kafka -->
         <!--implementation 'org.apache.kafka:kafka_2.11:2.1.1'-->
